@@ -1,14 +1,26 @@
 
-import React,{useState} from 'react'
-import { useQuery } from 'react-query'
-import { Link } from 'react-router-dom'
-import {useSuperheroes} from '../hooks/useSuperheroes'
+import React,{useState} from 'react';
+import { Link } from 'react-router-dom';
+import {useSuperheroes, useAddSuperhero} from '../hooks/useSuperheroes';
+import './RQSuperheroes.css';
 
 
 const RQSuperheroes = () => {
-const [pageNumber, setPageNumber]=useState(Number(1))
+const [pageNumber, setPageNumber]=useState(Number(1));
+const [inputId, setInputId]=useState(Number(0))
+const [inputName, setInputName]=useState("");
+const [inputAlterEgo, setInputAlterEgo]=useState("")
+
+
 const {isLoading, data, isError, error}=  useSuperheroes(pageNumber);
 
+const {mutate}= useAddSuperhero();
+
+const handleAddSuperhero=()=>{
+  console.log(inputId, typeof(inputId), inputName,inputAlterEgo);
+  const hero={id:inputId, name:inputName, alterEgo:inputAlterEgo};
+  mutate(hero)
+}
 
 
 
@@ -21,6 +33,12 @@ if(isError){
 }
   return (
     <div>RQ-Superheroes Page
+      <div className='inputBox'>
+        <input type="number" placeholder='Enter Superhero ID' onChange={(e)=>((setInputId(e.target.valueAsNumber)))} />
+        <input value={inputName} placeholder='Enter Superhero Name' onChange={(e)=>setInputName(e.target.value)} />
+        <input value={inputAlterEgo} placeholder='Enter Superhero AlterEgo' onChange={(e)=>setInputAlterEgo(e.target.value)} />
+        <button onClick={handleAddSuperhero}>Submit</button>
+      </div>
 
       <div>
       {data&&data.data.map((item)=>

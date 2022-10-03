@@ -1,54 +1,74 @@
 {
-  "superheroes":[
-      {
-          "id":1,
-          "name":"Tony Stark",
-          "alterEgo":"Iron Man"
-      },
-      {
-          "id":2,
-          "name":"Steve Rogers",
-          "alterEgo":"Captain America"
-      },
-      {
-          "id":3,
-          "name":"Bruce Banner",
-          "alterEgo":"Hulk"
-      },
-      {
-          "id":4,
-          "name":"Peter Parkers",
-          "alterEgo":"Spider-Man"
-      },
-      {
-          "id":5,
-          "name":"Wanda Maximoff",
-          "alterEgo":"Scarlet Witch"
-      },
-      {
-          "id":6,
-          "name":"Sam",
-          "alterEgo":"Falcon"
-      },
-      {
-          "id":7,
-          "name":"Thor",
-          "alterEgo":"Odinson"
-      },
-      {
-          "id":8,
-          "name":"Bruce Wayne",
-          "alterEgo":"Batman"
-      },
-      {
-          "id":9,
-          "name":"Clark Kent",
-          "alterEgo":"Superman"
-      },
-      {
-          "id":10,
-          "name":"Diana Prince",
-          "alterEgo":"Wonder Woman"
-      }
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Tony Stark",
+      "alterEgo": "Iron Man"
+    },
+    {
+      "id": 2,
+      "name": "Steve Rogers",
+      "alterEgo": "Captain America"
+    },
+    {
+      "id": 3,
+      "name": "Bruce Banner",
+      "alterEgo": "Hulk"
+    },
+    {
+      "id": 4,
+      "name": "Peter Parkers",
+      "alterEgo": "Spider-Man"
+    },
+    {
+      "id": 5,
+      "name": "Wanda Maximoff",
+      "alterEgo": "Scarlet Witch"
+    },
+    {
+      "id": 6,
+      "name": "Sam",
+      "alterEgo": "Falcon"
+    },
+    {
+      "id": 7,
+      "name": "Thor",
+      "alterEgo": "Odinson"
+    },
+    {
+      "id": 8,
+      "name": "Bruce Wayne",
+      "alterEgo": "Batman"
+    },
+    {
+      "id": 9,
+      "name": "Clark Kent",
+      "alterEgo": "Superman"
+    },
+    {
+      "id": 10,
+      "name": "Diana Prince",
+      "alterEgo": "Wonder Woman"
+    },
+    {
+      "id": 11,
+      "name": "Barry Allen",
+      "alterEgo": "Flash"
+    },
+    {
+      "id": 12,
+      "name": "Billy Batson",
+      "alterEgo": "Shazam"
+    },
+    {
+      "id": 13,
+      "name": "Jon John",
+      "alterEgo": "Martian Manhunter"
+    },
+    {
+      "id": 14,
+      "name": "Hal Jordan",
+      "alterEgo": "Green lantern"
+    }
   ]
 }

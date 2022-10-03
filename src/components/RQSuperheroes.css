@@ -1,0 +1,45 @@
+.inputBox{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 10px;
+    border: 5px solid gray;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.inputBox >input{
+    width: 250px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.inputBox >input:focus{
+   border-radius: 10px;
+}
+
+.inputBox > button{
+    width: 375px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.inputBox > button:hover{
+    color: red;
+    font-size: 21px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .inputBox{
+        flex-direction: column;
+        height: fit-content;
+        gap: 10px;
+        padding: 10px;
+    }
+  }
